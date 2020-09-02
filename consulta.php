@@ -20,6 +20,13 @@
                     </div>";
                 echo $mensaje_error;
             }
+            if(isset($_GET['nocontestado'])){
+                $mensaje_error = "
+                    <div class=\"error\">
+                        <p>Esta persona aun no ha completado el test</p>
+                    </div>";
+                echo $mensaje_error;
+            }
         ?>
         <form action="resultados.php" method="POST" class="form">
             <div class="datos">

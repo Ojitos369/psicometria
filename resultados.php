@@ -11,6 +11,9 @@
     if($consulta['nombre'] != $nombre){
         header('Location: consulta.php?error');
     }
+    if($consulta['contestado'] == 0){
+        header('Location: consulta.php?nocontestado');
+    }
     $puntuaciones = array();
     for($i=0;$i<10;$i++){
         array_push($puntuaciones,$consulta['serie'.($i+1)]);
