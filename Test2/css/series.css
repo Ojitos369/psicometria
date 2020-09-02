@@ -1,0 +1,43 @@
+.instrucciones{
+    top: 250px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.instrucciones h2{
+    margin-bottom: 10px;
+}
+
+hr{
+    border: 2px #000 solid;
+    margin: 25px 0 25px;
+}
+
+br{
+    margin: 5px 0 5px;
+}
+
+.pregunta{
+    width: 900px;
+    background: #9605;
+    padding: 10px 0 10px 15px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    border: 1px #000 solid;
+    border-radius: 15px;
+}
+
+.pregunta > input{
+    margin-left: 80px;
+}
+
+.preguntaTexto{
+    margin-bottom: 15px;
+}
+
+.boton_envio{
+    width: 400px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    text-align: right;
+}
