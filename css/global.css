@@ -11,6 +11,7 @@ body{
 }
 
 input::placeholder{
+    background: #0005;
     color: #fff;
 }
 
