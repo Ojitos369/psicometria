@@ -5,6 +5,9 @@ $servidor = "localhost";
 $basededatos = "asiracor_psicometria";
 
 $serie1 = "test1";
+$serie2 = "test2";
+$serie3 = "test3";
+$preguntas3 = "preguntas3";
 
 
 $conexion = new mysqli($servidor, $usuario, $contrasena,$basededatos);

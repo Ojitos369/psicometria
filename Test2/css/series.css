@@ -3,8 +3,13 @@
     text-align: center;
     margin-bottom: 20px;
 }
+
 .instrucciones h2{
     margin-bottom: 10px;
+}
+
+.numeros ul{
+    margin-left: 10px;
 }
 
 hr{
@@ -17,7 +22,6 @@ br{
 }
 
 .pregunta{
-    width: 900px;
     background: #9605;
     padding: 10px 0 10px 15px;
     margin-bottom: 30px;
@@ -26,18 +30,21 @@ br{
     border-radius: 15px;
 }
 
-.pregunta > input{
-    margin-left: 80px;
-}
-
 .preguntaTexto{
     margin-bottom: 15px;
 }
 
 .boton_envio{
-    width: 400px;
+    display: inline-block;
+    position: relative;
     padding-bottom: 10px;
     margin-bottom: 30px;
-    margin-left: 15px;
-    text-align: right;
+    left: 10%;
+    
+}
+
+@media screen and (min-width: 500px){
+    .pregunta{
+        width: 450px;
+    }
 }

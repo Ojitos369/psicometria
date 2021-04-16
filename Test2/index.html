@@ -6,140 +6,213 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/series.css">
-    <title>Test 2</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Serie 1</title>
 </head>
 <body>
-    <a href="index.html"><div class="encabezado"><img src="./media/logo.jpg" alt="logo" class="logo"></div></a>
+    <input type="number" value="120" style="display: none;" id="tiempoTest">
+    <a href="index.html"><div class="encabezado"><img src="./img/logo.jpg" alt="logo" class="logo"></div></a>
     <div>
         <div class="instrucciones">
-            <h2>Instrucciones</h2>
+            <h1>Test de ZAVIC</h1>
             <p>
-                Para cada uno de los problemas siguientes se sugieren cuatro respuestas, correctas. Seleccione la opcion que usted considere la mas acertada
+                A continuación usted encontrará una serie de situaciones que le van a sugerir 4 respuestas. Lea cada una de ellas cuidadosamente y anote en la hoja de respuestas en el paréntesis que corresponda un número de la siguiente manera:
+            </p>
+            <p>
+                No deben repetirse los números en una misma situación, siempre será 1,2,3 y 4 según sea su punto de vista. No conteste nada en este cuadernillo hágalo en la hoja de respuestas, no deje ninguna sin contestar. 
             </p>
         </div>
+        <div class="numeros">
+            <ul class="lista-ejemplo">
+                <li>El número 4 Cuando la respuesta sea más importante.</li>
+                <li>El número 3 Cuando le sea importante pero no tanto como la anterior.</li>
+                <li>El numero 2 Cuando la prefiera menos que las anteriores.</li>
+                <li>El número 1 Cuando tenga menos importancia.</li>
+            </ul>
+        </div>
         <br>
+        <div class="ejemplo">
+            <h3>Ejemplo:</h3>
+            <br>
+            <div class="pregunta">
+                <p class="preguntaTexto">Me encuentro sentado frente a un vidrio que esta sucio, a mi no me gusta esta situación lo que haría es:</p>
+                <div>
+                    <p>A)	Lo limpiaría</p><input type="number">
+                    <p>B)	Le diría al licenciado que si lo manda limpiar.</p><input type="number">
+                    <p>C)	Le diría a la señora del aseo que lo haga.</p><input type="number">
+                    <p>D)	Me guardaría la pena y me quedaría callado. </p><input type="number">
+                </div>
+            </div>
+        </div>
     </div>
     <hr>
     <div class="container_form">
-        <form class="form">
+        <form name="formulario" id="formulario" class="form" method="POST" action="./php/valor.php">
             <div class="pregunta p1">
-                <p class="pregunta_1 preguntaTexto">1.- Se le ha asignado un puesto en una empresa. La mejor forma de establecer relaciones amistosas y cordiales con sus nuevos compañeros seria:</p>
-                <input type="radio" value="A" name="Respuesta1">Evitando tomar nota de los errores que ellos incurran<br>
-                <input type="radio" value="B" name="Respuesta1">Hablando bien de ellos al Jefe<br>
-                <input type="radio" value="C" name="Respuesta1">Mostrando interes en el trabajo de ellos<br>
-                <input type="radio" value="D" name="Respuesta1">Pidiendoles <br>
+                <p id="pregunta1" class="pregunta_1 preguntaTexto">1.	Si usted tuviera la habilidad y condiciones adecuadas, a que se dedicaría:</p>
+                <p>A)	A modificar todos los jardines de la ciudad.</p><input type="number" name="respuesta1[]">
+                <p>B)	A obtener logros por medio de la política.</p><input type="number" name="respuesta1[]">
+                <p>C)	A prestar dinero a altos intereses.</p><input type="number" name="respuesta1[]">
+                <p>D)	A cumplir con las obligaciones que su religión le impone.</p><input type="number" name="respuesta1[]">
             </div>
             <div class="pregunta p2">
-                <p class="pregunta_2 preguntaTexto">2.- 2.	Tiene usted un empleado muy eficiente pero que constantemente se queja del trabajo, sus quejas producen mal efecto en los demás empleados. Lo mejor seria:</p>
-                <input type="radio" value="A" name="Respuesta2">Pedir a los demás empleados que traten de no hacer caso.<br>
-                <input type="radio" value="B" name="Respuesta2">Averiguar la causa de esa actitud y procurar su modificación<br>
-                <input type="radio" value="C" name="Respuesta2">Cambiarlo de departamento donde quede a cargo de otro Jefe<br>
-                <input type="radio" value="D" name="Respuesta2">Permitirle planear lo más posible acerca de su trabajo.<br>
+                <p class="pregunta_2 preguntaTexto">2.	Cuando ve un accidente usted:</p>
+                <p>A)	Se pone a orar con la persona accidentada</p><input type="number" name="respuesta2[]">
+                <p>B)	Pide una ambulancia.</p><input type="number" name="respuesta2[]">
+                <p>C)	Cuida las pertenencias del accidentado.</p><input type="number" name="respuesta2[]">
+                <p>D)	Trata de detener al culpable.</p><input type="number" name="respuesta2[]">
             </div>
             <div class="pregunta p3">
-                <p class="pregunta_3 preguntaTexto">3.- Un empleado de 60 años de edad que ha sido leal a la empresa durante 25 años se queja de exceso de trabajo. Lo mejor seria</p>
-                <input type="radio" value="A" name="respuesta3">Decirle que vuelva a su trabajo su pena de cese<br>
-                <input type="radio" value="B" name="respuesta3">Despedirlo sustituyéndolo por alguien mas joven<br>
-                <input type="radio" value="C" name="respuesta3">Darle un aumento de sueldo que evite continúe quejándose.<br>
-                <input type="radio" value="D" name="respuesta3">Aminorar su trabajo.<br>
+                <p class="pregunta_3 preguntaTexto">3.	Es usted un maestro de primaria y uno de sus alumnos le ofrece un costoso obsequio con el fin de obtener una mayor calificación usted:</p>
+                <p>A)	Le dedicaría tiempo extra para nivelarlo.</p><input type="number" name="respuesta3[]">
+                <p>B)	Lo rechazaría amablemente y lo invitaría a estudiar.</p><input type="number" name="respuesta3[]">
+                <p>C)	Aceptaría el presente y le daría la calificación deseada por su alumno, porque usted sabe que es inteligente.</p><input type="number" name="respuesta3[]">
+                <p>D)	Llamaría a sus padres para que paguen clases particulares.</p><input type="number" name="respuesta3[]">
             </div>
             <div class="pregunta p4">
-                <p class="pregunta_4 preguntaTexto">4.- Uno de los socios sin autorización sobre usted, le ordena haga algo en forma bien distinta de lo que planeaba. Que haría usted</p>
-                <input type="radio" value="A" name="respuesta4">Acatar la orden y no armar mayor revuelo.<br>
-                <input type="radio" value="B" name="respuesta4">Ignorar las indicaciones y hacer según usted había planeado.<br>
-                <input type="radio" value="C" name="respuesta4">Decirle que esto es asunto que no interesa y que usted hará las cosas a su modo<br>
-                <input type="radio" value="D" name="respuesta4">Decirle que lo haga el mismo.<br>
+                <p class="pregunta_4 preguntaTexto">4.	Al conducir su automóvil por descuido usted se pasa un alto, el agente de tránsito lo detiene y para permitirle circular nuevamente, le solicita cierta suma de dinero usted.</p>
+                <p>A)	Arranca su automóvil y deja al agente de transito.</p><input type="number" name="respuesta4[]">
+                <p>B)	Trata de llegar a un acuerdo encaminado a disminuir la cantidad de dinero.</p><input type="number" name="respuesta4[]">
+                <p>C)	Pide le sea levantada la infracción pertinente.</p><input type="number" name="respuesta4[]">
+                <p>D)	Amenaza al agente con reportarlo con sus superiores.</p><input type="number" name="respuesta4[]">
             </div>
             <div class="pregunta p5">
-                <p class="pregunta_5 preguntaTexto">5.- Usted visita a un amigo íntimo que ha estado enfermo por algún tiempo. Lo mejor seria</p>
-                <input type="radio" value="A" name="respuesta5">Platicarle sus diversiones recientes.<br>
-                <input type="radio" value="B" name="respuesta5">Platicarle nuevas referentes a amigos mutuos.<br>
-                <input type="radio" value="C" name="respuesta5">Comentar su enfermedad.<br>
-                <input type="radio" value="D" name="respuesta5">Enfatizar lo mucho que le avergüenza verle enfermo<br>
+                <p class="pregunta_5 preguntaTexto">5.	Prefiere una amistad que:</p>
+                <p>A)	Sea activo y le guste reparar defectos en su hogar.</p><input type="number" name="respuesta5[]">
+                <p>B)	Se interese por ser líder en el sindicato del cual forma parte.</p><input type="number" name="respuesta5[]">
+                <p>C)	Asistir con frecuencia a eventos religiosos.</p><input type="number" name="respuesta5[]">
+                <p>D)	Le interesa emprender negocios.</p><input type="number" name="respuesta5[]">
             </div>
             <div class="pregunta p6">
-                <p class="pregunta_6 preguntaTexto">6.- Trabaja usted en una industria y su jefe quiere que tome un curso relacionado con su trabajo, pero es incompatible con el horario nocturno de su carrera. Lo mejor seria</p>
-                <input type="radio" value="A" name="respuesta6">Continúe normalmente su carrera e informe a su jefe si le pregunta.<br>
-                <input type="radio" value="B" name="respuesta6">Explicarle la situación y obtener su opinión en cuanto a la importancia relativa de ambas situaciones.<br>
-                <input type="radio" value="C" name="respuesta6">Dejar la escuela en atención a los intereses del trabajo.<br>
-                <input type="radio" value="D" name="respuesta6">Asistir en forma alterna y no hacer comentarios.<br>
+                <p class="pregunta_6 preguntaTexto">6.	Si al llegar a su trabajo encuentra en el baño un reloj en el lavabo usted:</p>
+                <p>A)	Trataría de encontrar a su dueño.</p><input type="number" name="respuesta6[]">
+                <p>B)	Lo reporta a sus superiores y lo entrega,</p><input type="number" name="respuesta6[]">
+                <p>C)	No hace ningún comentario y espera a que lo busquen</p><input type="number" name="respuesta6[]">
+                <p>D)	Lo deja donde lo encontró. </p><input type="number" name="respuesta6[]">
             </div>
             <div class="pregunta p7">
-                <p class="pregunta_7 preguntaTexto">7.- Un agente viajero con 15 años de antigüedad, decide, presionado por su familia, a sentar raíces, se le cambia a oficinas generales. Es de esperar que</p>
-                <input type="radio" value="A" name="respuesta7">Guste de lo descansado del trabajo de oficina.<br>
-                <input type="radio" value="B" name="respuesta7">Se sienta inquieto por la rutina de la oficina.<br>
-                <input type="radio" value="C" name="respuesta7">Busque otro trabajo.<br>
-                <input type="radio" value="D" name="respuesta7">Resulte muy ineficiente en el trabajo de oficina.<br>
+                <p class="pregunta_7 preguntaTexto">7.	Un buen gobierno debería:</p>
+                <p>A)	Ayudar a las clases necesitadas.</p><input type="number" name="respuesta7[]">
+                <p>B)	Ampliar las zonas turísticas de cinco estrellas.</p><input type="number" name="respuesta7[]">
+                <p>C)	Buscar a los mejores líderes de su partido.</p><input type="number" name="respuesta7[]">
+                <p>D)	Permitir que la religión sea oficial.</p><input type="number" name="respuesta7[]">
             </div>
             <div class="pregunta p8">
-                <p class="pregunta_8 preguntaTexto">8.- iene dos invitados a cenar, uno radical, otro conservador. Surge una acalorada discusión respecto de política. Lo mejor seria.</p>
-                <input type="radio" value="A" name="respuesta8">Tomar partido<br>
-                <input type="radio" value="B" name="respuesta8">Intentar cambiar de tema<br>
-                <input type="radio" value="C" name="respuesta8">Dando los propios puntos de vista y mostrar donde ambos pecan de extremosos.<br>
-                <input type="radio" value="D" name="respuesta8">Pedir cambien de tema para evitar mayor discusión.<br>
+                <p class="pregunta_8 preguntaTexto">8.	Un amigo suyo desea obtener un ascenso dentro de su trabajo, usted le aconseja:</p>
+                <p>A)	Que sea cumplido y eficiente.</p><input type="number" name="respuesta8[]">
+                <p>B)	Que busque cuales son los errores del jefe para que demuestre que el no es perfecto.</p><input type="number" name="respuesta8[]">
+                <p>C)	Que prometa una manda a su santo de preferencia.</p><input type="number" name="respuesta8[]">
+                <p>D)	Que ofrezca una excelente comida a los dirigentes de la empresa.</p><input type="number" name="respuesta8[]">
             </div>
             <div class="pregunta p9">
-                <p class="pregunta_9 preguntaTexto">9.- Un joven invita a una dama al teatro, al llegar se percata de que ha olvidado la cartera, seria mejor.</p>
-                <input type="radio" value="A" name="respuesta9">Tratar de obtener boletos dejando el reloj en prenda.<br>
-                <input type="radio" value="B" name="respuesta9">Buscar un amigo a quien pedir prestado.<br>
-                <input type="radio" value="C" name="respuesta9">Decidir de acuerdo con ella lo procedente.<br>
-                <input type="radio" value="D" name="respuesta9">Dar una excusa plausible para ir a casa por dinero.<br>
+                <p class="pregunta_9 preguntaTexto">9.	Si Luis al llegar a su casa observa que le están robando las llantas al automóvil de su vecino:</p>
+                <p>A)	Llamaría a la policía.</p><input type="number" name="respuesta9[]">
+                <p>B)	Llamaría a su vecino</p><input type="number" name="respuesta9[]">
+                <p>C)	Pediría a los asaltantes parte del beneficio que obtendrán en el robo, por guardar silencio.</p><input type="number" name="respuesta9[]">
+                <p>D)	Mejor no haría nada y se metería a su casa.</p><input type="number" name="respuesta9[]">
             </div>
             <div class="pregunta p10">
-                <p class="pregunta_10 preguntaTexto">10.- Usted ha tenido experiencia como vendedor y acaba de conseguir otro trabajo en una tienda grande. La mejor forma de relacionarse con los empleados del departamento sería.</p>
-                <input type="radio" value="A" name="respuesta10">Permitirle hacer la mayoría de las ventas durante unos días en tanto observa sus métodos <br>
-                <input type="radio" value="B" name="respuesta10">Tratar de instituir  los métodos que anteriormente le fueron útiles.<br>
-                <input type="radio" value="C" name="respuesta10">Adaptarse a las condiciones y aceptar consejo de compañeros.<br>
-                <input type="radio" value="D" name="respuesta10">Pedir al jefe todo el consejo necesario.<br>
+                <p class="pregunta_10 preguntaTexto">10.	 Un empleado de 60 años  que ha sido leal a la empresa durante 28 años, se queja del exceso de trabajo, lo mejor sería:</p>
+                <p>A)	Pedir un aumento de sueldo.</p><input type="number" name="respuesta10[]">
+                <p>B)	Recurrir al sindicato para que éste le ayude.</p><input type="number" name="respuesta10[]">
+                <p>C)	Que recurra a su guía espiritual para que le diga como se le debe ayudar y su trabajo no se le haga pesado.</p><input type="number" name="respuesta10[]">
+                <p>D)	Que solicite una persona para que le ayude.</p><input type="number" name="respuesta10[]">
             </div>
             <div class="pregunta p11">
-                <p class="pregunta_11 preguntaTexto">11.- Es usted una joven empleada que va a comer con una maestra a quien conoce superficialmente. Lo mejor seria iniciar conversación acerca de</p>
-                <input type="radio" value="A" name="respuesta11">Algún tópico de actualidad de intereses general<br>
-                <input type="radio" value="B" name="respuesta11">Algún aspecto interesante de su propio trabajo.<br>
-                <input type="radio" value="C" name="respuesta11">Las tendencias actuales en el terreno docente,<br>
-                <input type="radio" value="D" name="respuesta11">Las sociedades de padres de familia.<br>
+                <p class="pregunta_11 preguntaTexto">11.	Usted visita a un amigo enfermo y lo mejor sería:</p>
+                <p>A)	Que lo convenza de acudir al seguro social para que su atención médica no le sea costosa.</p><input type="number" name="respuesta11[]">
+                <p>B)	Proponerle su ayuda cuando él tenga que acudir a sus citas médicas.</p><input type="number" name="respuesta11[]">
+                <p>C)	Que como todo le ha salido mal últimamente vea a una persona para que le realice una limpia.</p><input type="number" name="respuesta11[]">
+                <p>D)	Decirle lo importante que fueron las juntas de vecinos ahora que él estuvo hospitalizado.</p><input type="number" name="respuesta11[]">
             </div>
             <div class="pregunta p12">
-                <p class="pregunta_12 preguntaTexto">12.- Una  señora de especiales meritos que por largo tiempo ha dirigido trabajos benéficos, dejando las labores de la casa a cargo de la servidumbre, se cambia a otra población. Es de esperarse que ella</p>
-                <input type="radio" value="A" name="respuesta12">Se sienta insatisfecha en su nuevo hogar<br>
-                <input type="radio" value="B" name="respuesta12">Se interesa mas en los trabajos domésticos<br>
-                <input type="radio" value="C" name="respuesta12">Intervenga poco a poco en la vida de la comunidad continuando así sus intereses<br>
-                <input type="radio" value="D" name="respuesta12">Adoptar nuevos intereses en la nueva comunidad<br>
+                <p class="pregunta_12 preguntaTexto">12.	Al salir de viaje sus vecinos le piden cuidar su casa, durante su ausencia usted:</p>
+                <p>A)	Les dice que no debido a que se encuentra muy ocupado en esos días.</p><input type="number" name="respuesta12[]">
+                <p>B)	Atiende con gusto la petición de sus vecinos.</p><input type="number" name="respuesta12[]">
+                <p>C)	A cambio de sus servicios les solicita prestado el automóvil que no utilizarán en su viaje.</p><input type="number" name="respuesta12[]">
+                <p>D)	Asiste al modulo de vigilancia local, para que le brinde mayor seguridad.</p><input type="number" name="respuesta12[]">
             </div>
             <div class="pregunta p13">
-                <p class="pregunta_13 preguntaTexto">13.- Quiere pedirle un favor a un conocido con quien tiene poca confianza. La mejor forma de lograrlo seria</p>
-                <input type="radio" value="A" name="respuesta13">Haciéndole creer que será el quien se beneficie mas<br>
-                <input type="radio" value="B" name="respuesta13">Enfatice la importancia que para usted tiene que se lo conceda<br>
-                <input type="radio" value="C" name="respuesta13">Ofrecer algo en retribución<br>
-                <input type="radio" value="D" name="respuesta13">Decir lo que desea en forma breve, indicando los motivos<br>
+                <p class="pregunta_13 preguntaTexto">13.	Si encuentra a un niño llorando sólo en una tienda comercial usted:</p>
+                <p>A)	Lo ayudaría a buscar  a su familia en la tienda</p><input type="number" name="respuesta13[]">
+                <p>B)	Lo llevaría al área de servicios generales para que ahí espere a que lo ayuden</p><input type="number" name="respuesta13[]">
+                <p>C)	Pasaría de largo porque usted tiene prisa.</p><input type="number" name="respuesta13[]">
+                <p>D)	Lo llevaría a su casa pero le cobra a la mamá por el tiempo que usted perdió por andarla buscando.</p><input type="number" name="respuesta13[]">
             </div>
             <div class="pregunta p14">
-                <p class="pregunta_14 preguntaTexto">14.- Un joven de 24 años, gasta bastante tiempo y dinero en diversiones, se le ha hecho ver que así no lograra el éxito en el trabajo. Probablemente cambie sus costumbres, si</p>
-                <input type="radio" value="A" name="respuesta14">Sus hábitos nocturnos lesionaran su salud.<br>
-                <input type="radio" value="B" name="respuesta14">Sus amigos enfatizar el daño que se hacer así mismo<br>
-                <input type="radio" value="C" name="respuesta14">Su jefe se da cuenta y le previene<br>
-                <input type="radio" value="D" name="respuesta14">Se interese en el desarrollo de alguna fase de su trabajo<br>
+                <p class="pregunta_14 preguntaTexto">14.	Si usted viviera en provincia y tuviera más entradas de las que necesita que preferiría hacer con el dinero:</p>
+                <p>A)	Hacerlo producir para ayudar al desarrollo de la industria.</p><input type="number" name="respuesta14[]">
+                <p>B)	Donar el dinero para la construcción de una iglesia.</p><input type="number" name="respuesta14[]">
+                <p>C)	Darlo a una sociedad para el beneficio de las familias humildes del poblado</p><input type="number" name="respuesta14[]">
+                <p>D)	Apoyar ayuda al partido político con el cual simpatiza.</p><input type="number" name="respuesta14[]">
             </div>
             <div class="pregunta p15">
-                <p class="pregunta_15 preguntaTexto">15.- Las esponjas se obtienen de: </p>
-                <input type="radio" value="A" name="respuesta15">Animales<br>
-                <input type="radio" value="B" name="respuesta15">Hiervas<br>
-                <input type="radio" value="C" name="respuesta15">Bosques<br>
-                <input type="radio" value="D" name="respuesta15">Minas<br>
+                <p class="pregunta_15 preguntaTexto">15.	Su hijo ha dejado sus estudios por un tiempo:</p>
+                <p>A)	Le sugiere que vea a los maestros para que les proponga que lo ayuden.</p><input type="number" name="respuesta15[]">
+                <p>B)	Que haga lo que quiera pues ya está grande.</p><input type="number" name="respuesta15[]">
+                <p>C)	Que curse nuevamente el año para que pase las materias reprobadas.</p><input type="number" name="respuesta15[]">
+                <p>D)	Darle apoyo económico y moral para que supere este tropiezo en sus estudios.</p><input type="number" name="respuesta15[]">
             </div>
             <div class="pregunta p16">
-                <p class="pregunta_16 preguntaTexto">16.- Fraude es un termino utilizado en: </p>
-                <input type="radio" value="A" name="respuesta16">Medicina<br>
-                <input type="radio" value="B" name="respuesta16">Teologia<br>
-                <input type="radio" value="C" name="respuesta16">Leyes<br>
-                <input type="radio" value="D" name="respuesta16">Pedagogia<br>
+                <p class="pregunta_16 preguntaTexto">16.	A qué actividad prefiere dedicarse durante sus vacaciones:</p>
+                <p>A)	Obtener experiencia en otro negocio que no sea el propio.</p><input type="number" name="respuesta16[]">
+                <p>B)	Participar en la campaña política de diputados que se va a efectuar en su localidad.</p><input type="number" name="respuesta16[]">
+                <p>C)	Asistir a un retiro organizado por la iglesia.</p><input type="number" name="respuesta16[]">
+                <p>D)	Visitar un lugar que no conoce, en compañía de su familia.</p><input type="number" name="respuesta16[]">
             </div>
+            <div class="pregunta p17">
+                <p class="pregunta_17 preguntaTexto">17.	La familia de pero tiene un hijo drogadicto y es amigo de su hijo desde pequeño, al saberlo usted:</p>
+                <p>A)	Le pide a su hijo que no lo vuelva a ver.</p><input type="number" name="respuesta17[]">
+                <p>B)	Le sugiere a su familia que lo lleven a Centros de Integración Juvenil para que lo ayuden.</p><input type="number" name="respuesta17[]">
+                <p>C)	Si el muchacho ya es drogadicto le pide le obsequie un reloj que tanto le gusta a su hijo para no decírselo a sus padres.</p><input type="number" name="respuesta17[]">
+                <p>D)	Lo lleva a un centro de rehabilitación junto con su hijo para que sienta que lo apoya y no es rechazado.</p><input type="number" name="respuesta17[]">
+            </div>
+            <div class="pregunta p18">
+                <p class="pregunta_18 preguntaTexto">18.	Su esposa le comenta que al terminar de realizar sus actividades cotidianas le queda mucho tiempo libre, usted le sugiere:</p>
+                <p>A)	Que emplee su tiempo como catequista de la iglesia.</p><input type="number" name="respuesta18[]">
+                <p>B)	Que venda artículos femeninos.</p><input type="number" name="respuesta18[]">
+                <p>C)	Que promueva juntas entre los vecinos encaminadas a resolver los problemas de la comunidad.</p><input type="number" name="respuesta18[]">
+                <p>D)	Que asista con sus hijos a centros recreativos sí fuera posible.</p><input type="number" name="respuesta18[]">
+            </div>
+            <div class="pregunta p19">
+                <p class="pregunta_19 preguntaTexto">19.	Quiere pedir un favor a un conocido, que beneficiará a la empresa para la cual trabaja:</p>
+                <p>A)	Le explica los motivos y necesidades por las cuales requiere ese favor.</p><input type="number" name="respuesta19[]">
+                <p>B)	Le pide el favor sin mayor explicación.</p><input type="number" name="respuesta19[]">
+                <p>C)	Le hace creer que él será el más beneficiado al ofrecerle una retribución.</p><input type="number" name="respuesta19[]">
+                <p>D)	Le sugiere a su jefe que sea él quien se lo pida y explique la necesidad.</p><input type="number" name="respuesta19[]">
+            </div>
+            <div class="pregunta p20">
+                <p class="pregunta_20 preguntaTexto">20.	Cual  de las siguientes ocupaciones escogería:</p>
+                <p>A)	Trabajar en forma independiente.</p><input type="number" name="respuesta20[]">
+                <p>B)	Como encargado del departamento en el cual a usted le gusta.</p><input type="number" name="respuesta20[]">
+                <p>C)	Dedicarse a estudios de la iglesia.</p><input type="number" name="respuesta20[]">
+                <p>D)	Trabajador social.</p><input type="number" name="respuesta20[]">
+            </div>
+            <br>
             <div class="boton_envio">
-                <input type="submit" value="Envio" class="envio">
+                <input type="submit" id="envio" value="Envio" class="envio"" name="envio">
             </div>
             <br>
         </form>
     </div>
-    <script src='./js/serie_1.js'></script>
+
+    <div class="footer">
+        <div class="contact-moderno">
+            <ul>
+                <li><a href="http://fb.com/rrconecta">Facebook    <img src="../media/fb.png" alt="fb"></a></li>
+                <li><a href="https://twitter.com/rr_conecta">Twitter    <img src="../media/tw.png" alt="tw"></a></li>
+            </ul>
+        </div>
+        <div class="contact-moderno">
+            <ul>
+                <li><a href="https://www.instagram.com/rr_conecta">Instagram    <img src="../media/ig1.png" alt="ig"></a></li>
+                <li><a href="#">Linkedin    <img src="../media/in.png" alt="linkedin"></a></li>
+            </ul>
+        </div>
+        <div class="contacto">
+            <img class="contacto-img" src="./media/contacto.jpg" alt="contacto">
+        </div>
+        </div>
+    </div>
 </body>
 </html>

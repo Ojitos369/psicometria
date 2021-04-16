@@ -1,4 +1,10 @@
-<?php include("./php/conexion.php");?>
+<?php
+session_start();
+include("./php/conexion.php");
+if(isset($_SESSION['id'])){
+    $_SESSION['id'] = 0;
+}
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -20,15 +26,8 @@
                     </div>";
                 echo $mensaje_error;
             }
-            if(isset($_GET['nocontestado'])){
-                $mensaje_error = "
-                    <div class=\"error\">
-                        <p>Esta persona aun no ha completado el test</p>
-                    </div>";
-                echo $mensaje_error;
-            }
         ?>
-        <form action="resultados.php" method="POST" class="form">
+        <form action="./php/valida-consulta.php" method="POST" class="form">
             <div class="datos">
                 <input type="text" name="nombre" placeholder="Nombre completo" class="nombre">
                 <br>

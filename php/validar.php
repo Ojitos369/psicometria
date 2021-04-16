@@ -17,6 +17,8 @@
         }
         if($aux == 0){
             $conexion->query("INSERT INTO $serie1 (nombre, identificacion) VALUES ('$nombre','$id')");
+            $conexion->query("INSERT INTO $serie2 (nombre, identificacion) VALUES ('$nombre','$id')");
+            $conexion->query("INSERT INTO $serie3 (nombre, identificacion) VALUES ('$nombre','$id')");
             header('Location: ../lobby.html');
         }else{
             $sql = "SELECT * FROM $serie1 WHERE identificacion = $id";
