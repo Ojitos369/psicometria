@@ -1,6 +1,6 @@
 <?php 
 $usuario = "asiracor_root";
-$contrasena = "asiratoor";
+$contrasena = "toor12345";
 $servidor = "localhost";
 $basededatos = "asiracor_psicometria";
 
