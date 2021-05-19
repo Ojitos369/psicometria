@@ -1,6 +1,6 @@
 <?php session_start(); ?>
 <?php
-    include("conexion.php");
+    include('../../php/conexion.php');
     $id = $_SESSION['id'];
     $sql = "SELECT * FROM `test1` WHERE identificacion = $id";
     $resultado = mysqli_query($conexion,$sql);

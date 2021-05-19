@@ -22,7 +22,7 @@
     </div>
     <hr>
     <?php
-    include("./php/conexion.php");
+    include('../php/conexion.php');
     $sql = "SELECT * FROM $preguntas3";
     $resultado = mysqli_query($conexion,$sql);
     ?>
