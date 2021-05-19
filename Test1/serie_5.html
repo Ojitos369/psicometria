@@ -12,18 +12,7 @@
     <title>Serie 5</title>
 </head>
 <body>
-    <input type="number" value="300" style="display: none;" id="tiempoTest">
     <a href="index.html"><div class="encabezado"><img src="./img/logo.jpg" alt="logo" class="logo"></div></a>
-    <div>
-        <div class="item html">
-            <h2>0</h2>
-            <svg width="80" height="80" xmlns="http://www.w3.org/2000/svg">
-            <g>
-                <title>Layer 1</title>
-                <circle id="circle" class="circle_animation" r="35" cy="40" cx="40" stroke-width="8" stroke="#000" fill="none"/>
-            </g>
-            </svg>
-        </div>
     <div class="cuerpo">
         <div class="instrucciones">
             <h1>Instrucciones</h1>
@@ -114,12 +103,5 @@
             <br>
         </form>
     </div>
-<script>
-    var tiempoTest = document.getElementById('tiempoTest').value;
-    setTimeout(function (){
-        document.forms["formulario"].submit();
-        alert('Se termino el Tiempo');
-    },tiempoTest*1000);
-</script>
 </body>
 </html>

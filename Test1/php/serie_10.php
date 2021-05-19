@@ -1,6 +1,6 @@
 <?php session_start(); ?>
 <?php
-    include("conexion.php");
+    include('../../php/conexion.php');
     $id = $_SESSION['id'];
     $respuestas = array();
     error_reporting(E_ALL ^ E_NOTICE);
